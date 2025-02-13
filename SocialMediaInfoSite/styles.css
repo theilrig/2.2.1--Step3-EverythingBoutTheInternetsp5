@@ -1,0 +1,173 @@
+body {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title, .info {
+    padding: 20px;
+    margin: 10px 0;
+    background-size: cover;
+    background-position: center;
+    text-align: center; 
+}
+
+.title {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    background-image: url('Images/insta_gradient.jpg');
+    font-size: 70px;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 96%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.titletext {
+    font-size: 60px;
+    text-align: center;
+}
+
+.info {
+    background-color: #e6e6e6;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100%;
+    width: 96%; 
+    margin: 0 auto; 
+}
+
+.left, .right {
+    width: 45%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.left {
+    background-color: #e6f7ff;
+}
+
+.right {
+    background-color: #ffe6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.right img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: margin-left 0.3s ease; /* Smooth transition for body content */
+}
+
+/* Sidebar styles */
+.sidebar {
+    border-radius: 8px;
+    border: 5px solid rgb(255, 145, 56);
+    width: 85px;
+    background-color: white;
+    padding: 20px;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    height: 90vh; /* Make navigation fill the entire height of the viewport */
+    overflow-y: auto; /* Enable vertical scrolling within the navigation */
+    left: -100%; /* Initially hide the sidebar off-screen */
+    transition: 0.3s ease; /* Smooth transition when showing or hiding */
+}
+
+/* Navigation Styles */
+nav {
+    padding: 0px;
+    display: block;
+    text-align: center;
+    justify-content: center; /* Horizontally center the items */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    text-decoration: none;
+}
+
+nav ul li {
+    padding: 10px; /* Add padding to list items for better spacing */
+    transition: 0.3s;
+}
+
+nav a {
+    font-size: 25px;
+    color: black;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    font-family: 'Chomsky';
+    color: green;
+    font-size: 30px;
+}
+
+nav ul li:hover {
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+
+.toggle-btn {
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: #ff9138;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; 
+}
+
+.toggle-btn:hover {
+    background-color: #e67429;
+}
+
+body.sidebar-active {
+    margin-left: 85px; /
+}
+
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 70px; 
+    }
+}
+
+
+.sidebar-visible {
+    left: 0px; 
+}
+
