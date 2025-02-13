@@ -11,7 +11,7 @@
             padding: 0;
             background-color: #f4f4f4;
             opacity: 0;
-            animation: fadeIn 1s ease-in forwards;
+            animation: fadeIn 1s ease-in-out forwards;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -22,7 +22,8 @@
             color: white;
             text-align: center;
             padding: 20px;
-            font-size: 24px;
+            font-size: 26px;
+            font-weight: bold;
             position: sticky;
             top: 0;
             width: 100%;
@@ -30,18 +31,19 @@
             z-index: 1000;
         }
         section {
-            margin: 20px;
-            padding: 20px;
+            margin: 40px auto;
+            padding: 30px;
             background-color: white;
-            border-radius: 8px;
+            border-radius: 12px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-            transform: translateY(20px);
+            transform: translateY(30px);
             opacity: 0;
             animation: slideUp 0.8s ease-out forwards;
+            width: 80%;
         }
         @keyframes slideUp {
             from {
-                transform: translateY(20px);
+                transform: translateY(30px);
                 opacity: 0;
             }
             to {
@@ -49,54 +51,63 @@
                 opacity: 1;
             }
         }
+        img {
+            display: block;
+            width: 80%;
+            height: auto;
+            border-radius: 12px;
+            margin: 20px auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            opacity: 0;
+            transform: scale(0.95);
+            animation: fadeInScale 1s ease-out forwards;
+        }
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #0073e6;
             color: white;
-            margin-top: 20px;
+            margin-top: 30px;
             box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .image-placeholder {
-            width: 100%;
-            height: 200px;
-            background-color: #ccc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             font-size: 18px;
-            color: #555;
-            border-radius: 8px;
-            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
-        Wireless Router: A Computing Innovation
-    </header>
+    <header>Wireless Router: A Computing Innovation</header>
 
     <section>
         <h2>Introduction</h2>
         <p>The wireless router is a critical computing innovation that enables wireless communication and internet access. It has transformed how people connect to the digital world by eliminating the need for physical cables and allowing seamless connectivity for multiple devices.</p>
-        
     </section>
-        <img src="image_fx_ (1).jpg" alt="Wireless Router Image" style="width: 100%; height: auto; border-radius: 8px;margin-top: 10px;">
+
+    <img src="image_fx_ (1).jpg" alt="Wireless Router Image">
+    
     <section>
         <h2>How It Works</h2>
         <p>A wireless router transmits data between the internet and connected devices using radio waves. It acts as a gateway, assigning IP addresses, managing bandwidth allocation, and ensuring security through encryption protocols such as WPA2 and WPA3. Modern routers also incorporate advanced features like dual-band frequency, MU-MIMO technology, and Quality of Service (QoS) to optimize network performance.</p>
     </section>
 
+    <img src="image_fx_.jpg" alt="Wireless Router Image">
+    
     <section>
         <h2>Why It's a Computing Innovation</h2>
         <p>Wireless routers perform complex data processing tasks, including network traffic management, security encryption, and signal modulation. They have played a fundamental role in advancing mobile computing, smart homes, and the Internet of Things (IoT). With the ability to handle vast amounts of data wirelessly, routers have become an essential component in modern computing infrastructures.</p>
-        
     </section>
-        <img src="image_fx_.jpg" alt="Wireless Router Image" style="width:100%; height:auto; border-radius:8px; margin-top:10px;">
+
     <section>
         <h2>Impact on Society</h2>
         <p>Wireless routers have revolutionized communication, business, and education. They have enabled remote work, telemedicine, and virtual learning, breaking geographical barriers and fostering global collaboration. The expansion of public Wi-Fi networks has further enhanced accessibility, allowing individuals to stay connected anywhere. Additionally, the development of smart city infrastructures relies heavily on wireless routers to enable real-time data exchange and automation.</p>
     </section>
+    
 
-</body>
-</html>
